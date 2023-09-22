@@ -19,21 +19,23 @@ For my initial model, I use 3 layers. The total number of neurons are between 2-
 The accuracy is 73% for the testing data, and no sense of overfitting or underfitting.
 
 ### Optimization -2
+For the second model, I have tried `hidden_nodes_layer1=60, hidden_nodes_layer2=30` with 20 ecophs. And I am taking the chance with `tanh` activiation function. This has provided a 72.4%.
 
 ### Optimization -3
 I have used Kerastuner `hp.choice` to decide the activation function among `relu`, `tanh`, `sigmod`. I alsoused the hyperparameter tuning with the maximum 50 epochs.
 The results is blew with 73.2% accuracy.
-`{'activation': 'tanh',
- 'first_units': 61,
- 'num_layers': 3,
- 'units_0': 11,
- 'units_1': 11,
- 'units_2': 6,
- 'units_3': 16,
- 'units_4': 11,
- 'tuner/epochs': 17,
- 'tuner/initial_epoch': 0,
- 'tuner/bracket': 1,
+`{'activation': 'tanh', <br>
+ 'first_units': 61,<br>
+ 'num_layers': 3,<br>
+ 'units_0': 11,<br>
+ 'units_1': 11,<br>
+ 'units_2': 6,<br>
+ 'units_3': 16,<br>
+ 'units_4': 11,<br>
+ 'tuner/epochs': 17,<br>
+ 'tuner/initial_epoch': 0,<br>
+ 'tuner/bracket': 1,<br>
  'tuner/round': 0}`
  
 ## Summary
+Given my inability to achieve my target accuracy of 75%, I would not recommend any of the above models.I do believe that making changes to the input layers, trying various activation functions, and ecophs will also help optimize the model and achieve the desired goal of 75% accuracy.
