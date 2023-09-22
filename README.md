@@ -5,6 +5,7 @@ I've created a model for the Alphabet Soup foundation, it will help to select ap
 
 ## Results
 ### Data Processing
+This model designed to predict applicant success once funded. I have set the tagered variable as the `IS_SUCCESSFUL` columns in the database.
 
 ### Compiling, Training, and Evaluating the Model
 
